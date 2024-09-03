@@ -1,0 +1,28 @@
+.navbar .container {
+  display: flex;
+  align-items: center;
+
+}
+
+.logo {
+  margin-right: auto;
+
+  transition: ease-in-out 0.3s;
+}
+.logo img {
+  height: 50px;
+  min-width: 200px;
+}
+
+ul,
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.menu,
+ul {
+  display: flex;
+  gap: var(--size-20);
+  align-items: center;
+}
