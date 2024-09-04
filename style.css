@@ -1,17 +1,20 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 14.5px 0;
+}
+
 .navbar .container {
   display: flex;
   align-items: center;
-
 }
-
 .logo {
   margin-right: auto;
-
-  transition: ease-in-out 0.3s;
-}
-.logo img {
-  height: 50px;
-  min-width: 200px;
+  max-width: 200px;
+  min-width: 100px;
 }
 
 ul,
@@ -20,9 +23,76 @@ a {
   text-decoration: none;
 }
 
-.menu,
+.navbar-nav,
 ul {
   display: flex;
   gap: var(--size-20);
   align-items: center;
+}
+
+.heroSection {
+  margin-top: 100px;
+  display: flex;
+}
+.hero {
+  flex: 1;
+}
+.topLeft h1 {
+  text-align: left;
+  font-size: var(--size-40);
+  font-weight: 500;
+  line-height: 48.41px;
+  color: var(--black);
+  margin-bottom: var(--size-12);
+}
+.topLeft p {
+  font-size: var(--size-14);
+}
+.topRight {
+  position: relative;
+}
+.btn-wrapper {
+  display: flex;
+  gap: var(--size-20);
+  align-items: center;
+}
+.btn {
+  background-color: var(--btn-color);
+  padding: 15px 25px 15px 25px;
+  border-radius: 40px;
+}
+.btn a {
+  color: var(--white);
+}
+.learn-more a {
+  color: var(--btn-color);
+  font-weight: 700;
+}
+.icon {
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.icon-1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 380px;
+  padding: 16px;
+}
+.icon-2 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 175px;
+  padding: 16px;
+}
+.icon-5 {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 10px;
+  left: 64px;
+  padding: 10px;
 }
