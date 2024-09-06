@@ -1,3 +1,13 @@
+.top {
+  background-image: url("/assets/backgrounds/background-top.svg");
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 532px;
+
+  z-index: -1;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -7,6 +17,9 @@
   padding: 14.5px 0;
 }
 
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
 .navbar .container {
   display: flex;
   align-items: center;
@@ -31,7 +44,7 @@ ul {
 }
 
 .heroSection {
-  margin-top: 100px;
+  margin-top: 130px;
   display: flex;
 }
 .hero {
@@ -74,6 +87,7 @@ ul {
 }
 .icon-1 {
   position: absolute;
+  background-color: var(--white);
   width: 80px;
   height: 80px;
   top: 10px;
@@ -82,6 +96,7 @@ ul {
 }
 .icon-2 {
   position: absolute;
+  background-color: var(--white);
   width: 80px;
   height: 80px;
   top: 10px;
@@ -90,9 +105,46 @@ ul {
 }
 .icon-5 {
   position: absolute;
+  background-color: var(--white);
   width: 60px;
   height: 60px;
   top: 10px;
   left: 64px;
   padding: 10px;
+}
+.icon-6 {
+  position: absolute;
+  background-color: var(--white);
+  width: 80px;
+  height: 80px;
+  top: 172px;
+  left: 44px;
+  padding: 16px;
+}
+.icon-4 {
+  position: absolute;
+  background-color: var(--white);
+  width: 60px;
+  height: 60px;
+  top: 290px;
+  left: 155px;
+  padding: 10px;
+}
+.icon-7 {
+  position: absolute;
+  background-color: var(--white);
+  width: 80px;
+  height: 80px;
+  top: 172px;
+  left: 262px;
+  padding: 16px;
+}
+.icon-3 {
+  position: absolute;
+  background-color: var(--white);
+  width: 80px;
+  height: 80px;
+  top: 310px;
+  left: 364px;
+  padding: 16px;
 }

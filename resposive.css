@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+  [aria-expanded="false"] ~ .navbar-nav {
+    display: none;
+  }
+  [aria-expanded="true"] ~ .navbar-nav {
+    display: block;
+  }
+  [aria-expanded="true"] ~ .navbar-nav ul {
+    display: block;
+  }
+  .container {
+    max-width: 712px;
+  }
+  .heroSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .topRight {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  }
+ 
+
+  }
+  

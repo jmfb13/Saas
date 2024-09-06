@@ -4,6 +4,8 @@
   --font-color-light: #677788;
   --btn-color: #2476ff;
   --background: #20335b;
+  --break-line: #E7E7E7;
+
 
   --size-10: 0.625rem;
   --size-12: 0.75rem;
@@ -65,9 +67,10 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media (min-width: 1200px) {
   .container {
     max-width: 1140px;
   }
 }
+
+

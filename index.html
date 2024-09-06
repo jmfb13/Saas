@@ -20,6 +20,7 @@
       <header>
         <nav class="navbar nav">
           <div class="container">
+            <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown"><span>&#9776;</span></button>
             <div class="logo">
               <a href="#" class="logo-link"
                 ><img src="./assets/project_logo/logo.svg" alt="project_logo"
@@ -60,12 +61,25 @@
         <div class="hero topRight">
           <div class="icon icon-1"><img src="/assets/logo_icons/asana.png" alt="asana"></div>
           <div class="icon icon-2"><img src="/assets/logo_icons/atlassian.png" alt="atlassian"></div>
-          <!-- <div class="icon icon-3"><img src="/assets/logo_icons/calendar.png" alt="calendar"></div> -->
-          <!-- <div class="icon icon-4"><img src="/assets/logo_icons/google-A.png" alt="google-A"></div> -->
+          <div class="icon icon-3"><img src="/assets/logo_icons/calendar.png" alt="calendar"></div>
+          <div class="icon icon-4"><img src="/assets/logo_icons/google-A.png" alt="google-A"></div>
           <div class="icon icon-5"><img src="/assets/logo_icons/google.png" alt="google"></div>
-          <!-- <div class="icon icon-6"><img src="/assets/logo_icons/paypal.jpg" alt="paypal"></div> -->
+          <div class="icon icon-6"><img src="/assets/logo_icons/paypal.jpg" alt="paypal"></div>
+          <div class="icon icon-7"><img src="/assets/logo_icons/weave.png" alt="weave"></div>
         </div>
       </div>
     </section>
+
+
+    <script>
+      const navButton =  document.querySelector('button[aria-expanded]');
+
+      function toggleNav ( {target}) {
+        const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+        navButton.setAttribute('aria-expanded', !expanded);
+      }
+
+      navButton.addEventListener('click', toggleNav);
+    </script>
   </body>
 </html>
